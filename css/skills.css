@@ -1,0 +1,47 @@
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+
+  }
+  
+  .tag {
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 0.9em;
+    display: flex;
+    align-items: center;
+  }
+  
+  .tag.html { background-color: #eb7c60; }
+  .tag.css { background-color: #2965f1; }
+  .tag.js { background-color: #f7df1e; color: #000; }
+  .tag.php { padding: 5px 5px; background-color: #563d7c; }
+  .tag.java { background-color: #dd9b98; }
+  .tag.sql { background-color: #3489b0; }
+
+
+  .tag.bootstrap { background-color: #563d7c; }
+  .tag.spring { background-color: #c4f5c2; }
+  .tag.vscode { background-color: #7fc0eb; }
+  .tag.git { background-color: #b7a2f1; }
+  
+  .learning-list {
+    list-style: none;
+    padding-left: 20px;
+  }
+  
+  .learning-list li {
+    margin-bottom: 8px;
+  }
+  
+  .highlight {
+    color: #f589ff;
+  }
+  
+.logo{
+    width: 50px;
+}

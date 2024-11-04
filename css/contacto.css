@@ -1,0 +1,122 @@
+.learning-p {
+    padding-left: 20px;
+    width: 500px;
+  }
+/*Create cart*/
+.main_container {
+    padding-top: 3%;
+    display: flex;
+
+  }
+  
+  .main {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8em;
+  }
+  .up {
+    display: flex;
+    flex-direction: row;
+    gap: 0.8em;
+  }
+  .down {
+    display: flex;
+    flex-direction: row;
+    gap: 0.8em;
+  }
+  
+  .card1 {
+    width: 90px;
+    height: 90px;
+    outline: 5px solid red;
+    border: none;
+    background: rgb(30, 30, 30);
+    border-radius: 90px 5px 5px 5px;
+    box-shadow:
+      rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+      rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: all 0.2s;
+  }
+  .card2 {
+    width: 90px;
+    height: 90px;
+    outline: 5px solid rgb(0, 166, 255);
+    border: none;
+    background: rgb(30, 30, 30);
+    border-radius: 5px 90px 5px 5px;
+    box-shadow:
+      rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+      rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: all 0.2s;
+  }
+  .card3 {
+    width: 90px;
+    height: 90px;
+    outline: 5px solid rgb(217, 0, 255);
+    border: none;
+    background: rgb(30, 30, 30);
+    border-radius: 5px 5px 5px 90px;
+    box-shadow:
+      rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+      rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: all 0.2s;
+  }
+  .card4 {
+    width: 90px;
+    height: 90px;
+    outline: 5px solid rgb(255, 166, 139);
+    border: none;
+    background: rgb(30, 30, 30);
+    border-radius: 5px 5px 90px 5px;
+    box-shadow:
+      rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+      rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: all 0.2s;
+  }
+  
+  /*Change icons color*/
+  .card1:hover .youtube {
+    fill: red;
+  }
+  
+  .card1:hover .youtube_center_Icon {
+    fill: rgb(255, 255, 255);
+  }
+  
+  .card2:hover .LinkedIn {
+    fill: rgb(43, 85, 255);
+  }
+  
+  .card3:hover .gmail {
+    fill: rgb(255, 166, 139);
+  }
+  
+  .card4:hover .git {
+    fill: rgb(225, 52, 255);
+  }
+  
+  /*Change background color icons*/
+  .card1:hover {
+    cursor: pointer;
+    scale: 1.1;
+    background: rgb(161, 0, 0);
+  }
+  
+  .card2:hover {
+    cursor: pointer;
+    scale: 1.1;
+    background: rgb(0, 40, 198);
+  }
+  
+  .card3:hover {
+    cursor: pointer;
+    scale: 1.1;
+    background: rgb(169, 0, 199);
+  }
+  
+  .card4:hover {
+    cursor: pointer;
+    scale: 1.1;
+    background: rgb(199, 86, 0);
+  }
+  

@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #c1c1c1;
+    background-color: #111634;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; 
+}
+
+.sidebar {
+    width: 300px;
+    height: 710px;
+    background-color: #061c38;
+    padding: 50px;
+    text-align: center;
+}
+
+.avatar {
+    width: 150px;
+    /* Ajusta el tamaño de la imagen */
+    height: 150px;
+    /* Asegúrate de que sea cuadrada para un círculo perfecto */
+    border-radius: 50%;
+    /* Hace que el borde sea redondo */
+    object-fit: cover;
+    /* Asegura que la imagen se recorte y no se deforme */
+}
+
+.name a {
+    text-decoration: none; /* Quita el subrayado */
+    color: inherit; /* Usa el color de texto por defecto o cámbialo a uno específico */
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    color: #c1c1c1;
+    font-size: 1.2em;
+    padding: 10px 0;
+}
+
+.sidebar ul li.active {
+    color: #89d0ff;
+}
+
+.content {
+    flex: 1;
+    padding: 40px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #89e9ff;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #82b6ff;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.name {
+    font-size: 25px !important;
+}
+
+/* Inicio lista dinámica */
+#menu-dinamico {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+#lista-1-dinamica {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    /* Reduce el espacio entre los elementos */
+}
+
+.lista-2-dinamica {
+    position: relative;
+    list-style: none;
+}
+
+.item-lista-dinamica {
+    position: relative;
+    font-size: 20px;
+    /* Tamaño de la letra reducido */
+    text-decoration: none;
+    line-height: 1em;
+    letter-spacing: 1px;
+    /* Ajuste de espaciado */
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 0.5px rgba(255, 255, 255, 0.5);
+    /* Borde reducido */
+}
+
+.item-lista-dinamica::before {
+    content: attr(data-text);
+    position: absolute;
+    color: var(--clr);
+    width: 0;
+    overflow: hidden;
+    transition: 1s;
+    border-right: 4px solid var(--clr);
+    /* Borde reducido */
+    -webkit-text-stroke: 0.5px var(--clr);
+    /* Borde de texto reducido */
+}
+
+/* inicio distancia de transicion  */
+#item-lista-1-dinamica:hover::before {
+    width: 85%;
+    filter: drop-shadow(0 0 10px var(--clr));
+    /* Sombra más pequeña */
+}
+
+#item-lista-2-dinamica:hover::before {
+    width: 95%;
+    filter: drop-shadow(0 0 10px var(--clr));
+    /* Sombra más pequeña */
+}
+
+#item-lista-3-dinamica:hover::before {
+    width: 95%;
+    filter: drop-shadow(0 0 10px var(--clr));
+    /* Sombra más pequeña */
+}
+
+#item-lista-4-dinamica:hover::before {
+    width: 92%;
+    filter: drop-shadow(0 0 10px var(--clr));
+    /* Sombra más pequeña */
+}
+
+#item-lista-5-dinamica:hover::before {
+    width: 95%;
+    filter: drop-shadow(0 0 10px var(--clr));
+    /* Sombra más pequeña */
+}
+
+/* fin distancia de transicion  */
+.lista-secciones {
+    text-align: start;
+}
+
+/* Fin lista dinámica */
+

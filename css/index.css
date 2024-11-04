@@ -1,0 +1,90 @@
+.learning-p {
+    padding-left: 20px;
+    width: 700px;
+}
+
+.contact-link {
+    color: #ff6347;
+    /* Cambia este valor al color que prefieras */
+    text-decoration: none;
+    /* Opcional: Quita el subrayado si lo deseas */
+}
+
+.highlight {
+    color: #f589ff;
+}
+
+/*  */
+.containerRedes {
+    display: flex;
+}
+
+.Btn {
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    margin-left: 10px;
+}
+
+.instagram {
+    background: linear-gradient(45deg,
+            #f09433 0%,
+            #e6683c 25%,
+            #dc2743 50%,
+            #cc2366 75%,
+            #bc1888 100%);
+}
+
+.youtube {
+    background-color: #ff0000;
+}
+
+.linkedin {
+    background-color: #1da1f2;
+}
+
+.github {
+    background-color: #961df2;
+}
+
+.gmail {
+    background-color: #fa2626;
+}
+
+.Btn:hover {
+    width: 110px;
+    border-radius: 30px;
+}
+
+.Btn:hover .text {
+    opacity: 1;
+}
+
+.Btn:hover .svgIcon {
+    opacity: 0;
+}
+
+.text {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    width: 120px;
+    font-weight: 600;
+    opacity: 0;
+    transition-duration: 0.4s;
+}
+
+.svgIcon {
+    transition-duration: 0.3s;
+}
+
+.svgIcon path {
+    fill: white;
+}

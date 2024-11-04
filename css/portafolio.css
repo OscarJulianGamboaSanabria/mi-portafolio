@@ -1,0 +1,28 @@
+.learning-p {
+    padding-left: 20px;
+    width: 700px;
+}
+/*Inicio galeria desplegable*/
+#seccion-imagenes-desplegable{
+    display: flex;
+    width: 600px;
+    height: 430px;
+
+}
+.imagen-desplegables{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+
+.imagen-desplegables:hover{
+   
+    width: 300px;
+    opacity: 1;
+    filter: contrast(100%);
+}
+.carImg{
+}
+/*Fin galeria desplegable*/
