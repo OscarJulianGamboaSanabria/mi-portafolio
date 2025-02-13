@@ -13,22 +13,24 @@ body {
 .container {
     display: flex;
     min-height: 100vh;
-    align-items: center; /* Centra verticalmente */
     justify-content: center; 
 }
 
 .sidebar {
-    width: 300px;
-    height: 710px;
     background-color: #061c38;
     padding: 50px;
     text-align: center;
+    width: 35vh; /* Define un ancho fijo */
+    overflow-y: auto; /* Desplazamiento si el contenido es largo */
+    min-width: 35vh; /* Evita que se reduzca */
+    max-width: 35vh; /* Evita que se expanda */
 }
 
 .avatar {
-    width: 150px;
-    /* Ajusta el tamaño de la imagen */
-    height: 150px;
+    width: 20vh; /* Tamaño relativo al viewport */
+    height: 20vh;
+    min-width: 20vh; /* Evita que se reduzca */
+    max-width: 20vh; /* Evita que se expanda */
     /* Asegúrate de que sea cuadrada para un círculo perfecto */
     border-radius: 50%;
     /* Hace que el borde sea redondo */
@@ -47,9 +49,10 @@ body {
 
 .sidebar ul li {
     color: #c1c1c1;
-    font-size: 1.2em;
+    font-size: clamp(1rem, 1rem, 1rem); /* Mínimo 1rem, ajusta con la pantalla, máximo 1.2rem */
     padding: 10px 0;
 }
+
 
 .sidebar ul li.active {
     color: #89d0ff;
@@ -58,6 +61,7 @@ body {
 .content {
     flex: 1;
     padding: 40px;
+    padding-right: 0 !important;
 }
 
 h1 {
